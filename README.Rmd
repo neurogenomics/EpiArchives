@@ -1,0 +1,24 @@
+---
+title: "`EpiArchives`"  
+author: "Brian M. Schilder" 
+date: "<h4>README updated: <i>`r format( Sys.Date(), '%b-%d-%Y')`</i></h4>"
+output:
+  github_document
+---
+
+```{r setup, include=TRUE}
+f <- list.files("code",pattern = "*.R$", full.names = TRUE)
+source(f)
+```
+
+# EpiArchives
+
+Public archive for [`EpiCompare`](https://github.com/neurogenomics/EpiCompare) reports.
+
+# Reports
+
+```{r, results='asis'}
+list_reports()
+```
+
+<hr>
