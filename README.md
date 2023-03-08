@@ -23,7 +23,7 @@ All reports are hosted on GitHub Pages. Links are compiled
 ## Reports
 
 ``` r
-f <- list.files("code",pattern = "*.R$", full.names = TRUE)
+f <- list.files("utils",pattern = "*.R$", full.names = TRUE)
 source(f)
 list_reports()
 ```
