@@ -12,7 +12,7 @@ README updated: <i>Mar-08-2023</i>
 All reports are hosted on GitHub Pages. Links are compiled
 [below](#reports).
 
-# [Home](https://neurogenomics.github.io/EpiArchives/reports/atac_dnase_chip_example/EpiCompare.html)
+# [Home](https://neurogenomics.github.io/EpiArchives)
 
 ## Reports
 
