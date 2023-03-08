@@ -1,6 +1,7 @@
 list_reports <- function(dir=here::here("reports"),
                          pattern = "EpiCompare.html$",
-                         domain="https://neurogenomics.github.io/EpiArchives"){
+                         domain="https://neurogenomics.github.io/EpiArchives",
+                         header="###"){
     # devoptera::args2vars(list_reports, reassign = TRUE)
     wd <- getwd()
     #### Find files ####    
@@ -13,7 +14,7 @@ list_reports <- function(dir=here::here("reports"),
                              basename(dirname(files)))
     #### Make markdown elements #### 
     md <- lapply(names(links), function(nm){
-        paste0("## [",nm,"](",links[[nm]],")") 
+        paste0(header," [",nm,"](",links[[nm]],")") 
     })
     cat(paste(md,collapse = "\n"))
 }
