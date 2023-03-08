@@ -1,6 +1,6 @@
 list_reports <- function(dir=here::here("reports"),
                          pattern = "EpiCompare.html$",
-                         domain="https://neurogenomics.github.io"){
+                         domain="https://neurogenomics.github.io/EpiArchives"){
     #### Find files ####    
     files <- list.files(path = dir, 
                         pattern = pattern, 
