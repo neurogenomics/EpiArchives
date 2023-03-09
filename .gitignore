@@ -1,3 +1,4 @@
+reports/**/EpiCompare_file/lib
 # R project files
 *.Rproj
 .Rproj.user
