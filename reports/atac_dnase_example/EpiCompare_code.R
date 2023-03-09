@@ -50,4 +50,4 @@ html_out <- EpiCompare::EpiCompare(peakfiles = peaklist,
                                    run_all = TRUE,
                                    output_filename = "EpiCompare",
                                    display = "browser",
-                                   workers = NULL)
+                                   workers = 10)
