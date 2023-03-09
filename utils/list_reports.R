@@ -14,7 +14,12 @@ list_reports <- function(dir=here::here("reports"),
                              basename(dirname(files)))
     #### Make markdown elements #### 
     md <- lapply(names(links), function(nm){
-        paste0(header," [",nm,"](",links[[nm]],")") 
+        paste(
+            paste0(header," [",nm,"](",links[[nm]],")"),
+            paste0("- ","[Code to reproduce.](",
+                   gsub(".html$","_code.R",links[[nm]]),
+                   ")")
+        )
     })
     cat(paste(md,collapse = "\n"))
 }
