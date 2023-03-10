@@ -16,9 +16,9 @@ list_reports <- function(dir=here::here("reports"),
     md <- lapply(names(links), function(nm){
         paste(
             paste0(header," [",nm,"](",links[[nm]],")"),
-            paste0("- ","[Code to reproduce.](",
+            paste0("\n- ","[Code to reproduce.](",
                    gsub(".html$","_code.R",links[[nm]]),
-                   ")")
+                   ")\n")
         )
     })
     cat(paste(md,collapse = "\n"))
